@@ -1,0 +1,5 @@
+{
+  "name": "Adhya Grand - Pure Vegetarian Restaurant in Sirsi",
+  "description": "Experience Sirsi's finest pure vegetarian dining at Adhya Grand. Premium ambiance, hygienic environment, and delicious South & North Indian cuisine.",
+  "requestFramePermissions": ["geolocation"]
+}
