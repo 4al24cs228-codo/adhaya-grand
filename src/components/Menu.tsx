@@ -6,24 +6,24 @@ const menuCategories = [
     title: "Breakfast Specials",
     description: "Start your day with our fresh morning delights.",
     items: [
-      { name: "Masala Dosa", price: "₹60", image: "https://picsum.photos/seed/dosa/400/300" },
-      { name: "Idli Vada", price: "₹50", image: "https://picsum.photos/seed/idli/400/300" },
+      { name: "Masala Dosa", price: "₹60", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwep9yzcUbPNLpJWzg1ijHb5jcQVfNf_ysfJ9SG-o3j_rOFXn4RQjbwvoR0O0J1PfBp9qmeSwtdVl4_FQm2RMXc-HSOHVVqq8Pz-n-iA-GKDgZaCscQITg4pAqHlPtpAJqq9HL5c_Jj8C3Y8=w1000" },
+      { name: "Idli Vada", price: "₹50", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweo1dQquKMpGbzjn8Q85oUyNpitxdowI-nQyF3TcJq01ijiOXhq-lAM8g-ctqLnMIOtWPyQoNg-g7xdcIxaoGgs6ulrhSPedC6tee_nE5eWDs0USio6NhIh3xVA4MNYvpq1NUPzQdQqbBoZj=w1000" },
     ]
   },
   {
     title: "South Indian Meals",
     description: "Authentic Karnataka style thali experience.",
     items: [
-      { name: "Full South Indian Meal", price: "₹120", image: "https://picsum.photos/seed/thali/400/300" },
-      { name: "Special Veg Biryani", price: "₹150", image: "https://picsum.photos/seed/biryani/400/300" },
+      { name: "Full South Indian Meal", price: "₹120", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer9LeWWTJkEOqss9LgMKJyT9hpe9ZahHvj8z9T15acJb_SFpfdUufM7Njm98_WD2gwCgZdHDsiA3TcQ0EkSw-fdd_IfDi8y8fQEm5WfYM1MvI5Hj5-PU-AGW_qHl-yhI_ARCLUs=w1000" },
+      { name: "Special Veg Biryani", price: "₹150", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerf477msoJRIJp15W1Ju4f7SVJpDRkbiS_y2PKBS5v-VbRIPhf8OAfdkoCdpsiszy7xrwie7Mkqso4B0TdejACq9C1IQ3ogiN5GAYST3DWx-DVGpd6ZxItx-nAtJ7vs2sCru4cUIB9MOSCW=w1000" },
     ]
   },
   {
     title: "North Indian Delicacies",
     description: "Rich and flavorful dishes from the North.",
     items: [
-      { name: "Kaju Masala", price: "₹180", image: "https://picsum.photos/seed/kaju/400/300" },
-      { name: "Paneer Manchurian", price: "₹160", image: "https://picsum.photos/seed/paneer/400/300" },
+      { name: "Kaju Masala", price: "₹180", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqFm3XEN-DEBiaLfWZt2l5JBYkZNYwKtaPdfxWwspow_j3zZIVzb-AaR6NGGewVgLg_tmrIEsKhTVKxqBojulbGOf1-f5_nvc6j5RuWoA4Q9dFp8juP0GitA0EG1TlaEvPfoFp3HdSoNg7e=w1000" },
+      { name: "Paneer Manchurian", price: "₹160", image: "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFo9aS75U3uHQIe54yFV8fIbF4IMNome0I5om3PY1FXfpZNm23bewa5d1JtqPhGvghiVsiGEHRk_r202uEYUvE7gufFqWUxID-tvzVwZyJBNSfjwul4ZW19QUZsIOlV6X5AFqTguCpMqoNZNyOAbqZjHqarPFV0qG4dw19W1BuFAtSFbIFQoYgW=w1000" },
     ]
   }
 ];

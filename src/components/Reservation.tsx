@@ -4,9 +4,32 @@ import { useState, FormEvent } from "react";
 
 export default function Reservation() {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    date: "",
+    guests: "2 People",
+    requests: ""
+  });
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    
+    // Format date from yyyy-mm-dd to dd-mm-yyyy
+    const [year, month, day] = formData.date.split("-");
+    const formattedDate = `${day}-${month}-${year}`;
+
+    const message = `*New Reservation Request*%0A%0A` +
+      `*Name:* ${formData.name}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Date:* ${formattedDate}%0A` +
+      `*Guests:* ${formData.guests}%0A` +
+      `*Special Requests:* ${formData.requests || "None"}`;
+
+    const whatsappUrl = `https://wa.me/916360476260?text=${message}`;
+    
+    window.open(whatsappUrl, "_blank");
+    
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
   };
@@ -55,28 +78,50 @@ export default function Reservation() {
                   <Send size={40} />
                 </div>
                 <h3 className="text-3xl font-serif mb-4">Request Sent!</h3>
-                <p className="text-earth/60">We'll contact you shortly to confirm your reservation.</p>
+                <p className="text-earth/60">We've opened WhatsApp to send your reservation details. We'll contact you shortly to confirm.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Full Name</label>
-                    <input type="text" required className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" />
+                    <input 
+                      type="text" 
+                      required 
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" 
+                    />
                   </div>
                   <div>
                     <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Phone Number</label>
-                    <input type="tel" required className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" />
+                    <input 
+                      type="tel" 
+                      required 
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" 
+                    />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Date</label>
-                    <input type="date" required className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" />
+                    <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Date (dd-mm-yyyy)</label>
+                    <input 
+                      type="date" 
+                      required 
+                      value={formData.date}
+                      onChange={(e) => setFormData({...formData, date: e.target.value})}
+                      className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors" 
+                    />
                   </div>
                   <div>
                     <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Guests</label>
-                    <select className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors">
+                    <select 
+                      value={formData.guests}
+                      onChange={(e) => setFormData({...formData, guests: e.target.value})}
+                      className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors"
+                    >
                       <option>2 People</option>
                       <option>4 People</option>
                       <option>6+ People</option>
@@ -86,7 +131,12 @@ export default function Reservation() {
                 </div>
                 <div>
                   <label className="block text-xs uppercase tracking-widest text-earth/50 mb-2">Special Requests</label>
-                  <textarea rows={3} className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors"></textarea>
+                  <textarea 
+                    rows={3} 
+                    value={formData.requests}
+                    onChange={(e) => setFormData({...formData, requests: e.target.value})}
+                    className="w-full bg-white border border-gold/10 rounded-xl px-4 py-3 focus:outline-none focus:border-gold transition-colors"
+                  ></textarea>
                 </div>
                 <button type="submit" className="btn-primary w-full">
                   Confirm Reservation

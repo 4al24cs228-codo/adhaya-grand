@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://picsum.photos/seed/restaurant-interior/1920/1080?blur=2"
+          src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerAL8_GmBTAg2lplGf2FwM-FLFXLbVgRcw1jwG_KrjHhwJPRdPfH_Q5tD36FdlbonzvoJKXCJbM1CUPbfur6L6iEZlMnHhIIl3Feo6In_Cz4k0CFFJCfx8c1zTvl8GBanqHFmCe12yXDoo=w1920"
           alt="Adhya Grand Interior"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
