@@ -36,10 +36,10 @@ export default function Contact() {
                   <h4 className="font-serif text-xl mb-1">Call Us</h4>
                   <p className="text-earth/60 mb-4">For reservations and takeaway orders</p>
                   <div className="flex flex-wrap gap-4">
-                    <a href="tel:+910000000000" className="btn-primary !py-2 !px-4 text-sm flex items-center gap-2">
+                    <a href="tel:+916360476260" className="btn-primary !py-2 !px-4 text-sm flex items-center gap-2">
                       <Phone size={16} /> Call Now
                     </a>
-                    <a href="https://wa.me/910000000000" className="btn-secondary !py-2 !px-4 text-sm flex items-center gap-2">
+                    <a href="https://wa.me/916360476260" className="btn-secondary !py-2 !px-4 text-sm flex items-center gap-2">
                       <MessageCircle size={16} /> WhatsApp
                     </a>
                   </div>

@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Menu", href: "#menu" },
+    { name: "Signature", href: "#signature-dishes" },
     { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" },
   ];
@@ -41,7 +42,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a href="tel:+910000000000" className="btn-primary flex items-center gap-2 text-sm">
+            <a href="tel:+916360476260" className="btn-primary flex items-center gap-2 text-sm">
               <Phone size={16} /> Call Now
             </a>
           </div>
@@ -74,7 +75,7 @@ export default function Navbar() {
               </a>
             ))}
             <div className="px-3 py-2">
-              <a href="tel:+910000000000" className="btn-primary w-full flex justify-center items-center gap-2">
+              <a href="tel:+916360476260" className="btn-primary w-full flex justify-center items-center gap-2">
                 <Phone size={18} /> Call Now
               </a>
             </div>

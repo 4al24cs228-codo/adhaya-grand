@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import SignatureDishes from "./components/SignatureDishes";
 import Features from "./components/Features";
 import Reviews from "./components/Reviews";
 import Gallery from "./components/Gallery";
@@ -80,6 +81,7 @@ export default function App() {
       <About />
       <Features />
       <Menu />
+      <SignatureDishes />
       <Gallery />
       <Reservation />
       <Reviews />
