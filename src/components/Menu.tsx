@@ -23,8 +23,7 @@ const menuCategories = [
     description: "Rich and flavorful dishes from the North.",
     items: [
       { name: "Kaju Masala", price: "₹180", image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqFm3XEN-DEBiaLfWZt2l5JBYkZNYwKtaPdfxWwspow_j3zZIVzb-AaR6NGGewVgLg_tmrIEsKhTVKxqBojulbGOf1-f5_nvc6j5RuWoA4Q9dFp8juP0GitA0EG1TlaEvPfoFp3HdSoNg7e=w1000" },
-      { name: "Paneer Manchurian", price: "₹160", image: "https://lh3.googleusercontent.com/gps-proxy/ALd4DhFo9aS75U3uHQIe54yFV8fIbF4IMNome0I5om3PY1FXfpZNm23bewa5d1JtqPhGvghiVsiGEHRk_r202uEYUvE7gufFqWUxID-tvzVwZyJBNSfjwul4ZW19QUZsIOlV6X5AFqTguCpMqoNZNyOAbqZjHqarPFV0qG4dw19W1BuFAtSFbIFQoYgW=w1000" },
-    ]
+      { name: "Paneer Manchurian", price: "₹160", image: https://github.com/4al24cs228-codo/adhaya-grand/blob/main/images/menu%20image/PaneerManchurian.jpg
   }
 ];
 
