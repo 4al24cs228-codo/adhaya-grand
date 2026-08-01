@@ -4,7 +4,7 @@ import { Star, ChevronRight } from "lucide-react";
 const signatureDishes = [
   {
     name: "Masala Dosa",
-    image: "https://vismaifood.com/storage/app/uploads/public/8b4/19e/427/thumb__1200_0_0_0_auto.jpg",
+    image:  "https://raw.githubusercontent.com/4al24cs228-codo/adhaya-grand/main/images/menu%20image/masaladosa.jpg",
     description: "Crispy South Indian dosa filled with spiced potato masala served with chutney and sambar.",
     isPopular: true,
   },
