@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-serif text-xl mb-1">Call Us</h4>
-                  <p className="text-earth/60 mb-4">For reservations and takeaway orders</p>
+                  <p className="text-earth/60 mb-4">+91 6360476260</p>
                   <div className="flex flex-wrap gap-4">
                     <a href="tel:+916360476260" className="btn-primary !py-2 !px-4 text-sm flex items-center gap-2">
                       <Phone size={16} /> Call Now
@@ -67,13 +67,13 @@ export default function Contact() {
           >
             {/* Placeholder for Google Map Embed */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.658742546415!2d74.83!3d14.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM3JzEyLjAiTiA3NMKwNDknNDguMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.109549041717!2d74.8452884!3d14.6342199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbeaf001c676ca1%3A0xf71757cbe56884de!2sAdhya%20Grand!5e1!3m2!1sen!2sin!4v1785564798437!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             ></iframe>
           </motion.div>
         </div>

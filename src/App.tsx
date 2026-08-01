@@ -17,6 +17,8 @@ import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
+import { MessageCircle } from "lucide-react";
+
 export default function App() {
   useEffect(() => {
     // Schema.org markup for LocalBusiness
@@ -27,7 +29,7 @@ export default function App() {
       "image": "https://picsum.photos/seed/restaurant/800/600",
       "@id": "",
       "url": window.location.href,
-      "telephone": "+910000000000",
+      "telephone": "+916360476260",
       "priceRange": "₹200-₹400",
       "address": {
         "@type": "PostalAddress",
@@ -39,8 +41,8 @@ export default function App() {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 14.62,
-        "longitude": 74.83
+        "latitude": 14.634505,
+        "longitude": 74.845267
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -88,6 +90,17 @@ export default function App() {
       <FAQ />
       <Contact />
       <Footer />
+      
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/916360476260" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle size={28} />
+      </a>
     </main>
   );
 }
