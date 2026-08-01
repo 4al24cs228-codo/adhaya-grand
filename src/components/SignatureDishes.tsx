@@ -126,7 +126,7 @@ const signatureDishes = [
 
 export default function SignatureDishes() {
   return (
-    <section id="signature-dishes" className="py-24 bg-cream">
+    <section id="signature-dishes" className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.span 

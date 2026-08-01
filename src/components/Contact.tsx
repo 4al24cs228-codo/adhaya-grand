@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-cream">
+    <section id="contact" className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
@@ -63,7 +63,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white"
+            className="h-[350px] md:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden shadow-2xl border-4 md:border-8 border-white"
           >
             {/* Placeholder for Google Map Embed */}
             <iframe

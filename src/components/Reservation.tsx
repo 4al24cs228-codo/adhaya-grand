@@ -35,10 +35,10 @@ export default function Reservation() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-earth rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 p-12 lg:p-20 text-white">
+          <div className="lg:w-1/2 p-6 sm:p-12 lg:p-20 text-white">
             <span className="text-gold font-medium tracking-widest uppercase text-sm mb-4 block">Reservations</span>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Table</h2>
             <p className="text-white/60 mb-10 leading-relaxed">
@@ -66,8 +66,7 @@ export default function Reservation() {
               </div>
             </div>
           </div>
-
-          <div className="lg:w-1/2 bg-cream p-12 lg:p-20">
+          <div className="lg:w-1/2 bg-cream p-6 sm:p-12 lg:p-20">
             {submitted ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}

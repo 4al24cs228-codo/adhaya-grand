@@ -30,7 +30,7 @@ const menuCategories = [
 
 export default function Menu() {
   return (
-    <section id="menu" className="py-24 bg-cream">
+    <section id="menu" className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-gold font-medium tracking-widest uppercase text-sm mb-4 block">Our Menu</span>
